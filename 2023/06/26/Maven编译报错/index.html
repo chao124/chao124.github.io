@@ -17,7 +17,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://xfxywl.l2.ttut.cc/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/image-20240626140948369.png">
 <meta property="article:published_time" content="2023-06-26T06:01:57.000Z">
-<meta property="article:modified_time" content="2024-06-26T06:20:17.665Z">
+<meta property="article:modified_time" content="2024-06-26T06:27:03.977Z">
 <meta property="article:author" content="阳光下的少年">
 <meta property="article:tag" content="springboot">
 <meta property="article:tag" content="Maven">
@@ -197,6 +197,7 @@
       
         <h4 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h4><p>Maven项目构建时报错如下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[ERROR] Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] java.lang.IllegalArgumentException: Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] </span><br><span class="line">[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.</span><br><span class="line">[ERROR] Re-run Maven using the -X switch to enable full debug logging.</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 
 <h4 id="问题根因"><a href="#问题根因" class="headerlink" title="问题根因"></a>问题根因</h4><p>maven本地仓库更新策略是会更新三个元文件（包含resolver-status.properties配置文件）以及本地仓库jar包，如果历史文件有错误的话可能会导致加载配置路径错误。</p>
 <h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>All Roads Lead to Rome.</p>
