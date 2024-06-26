@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xfxywl.l2.ttut.cc/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/</loc>
+    
+    <lastmod>2024-06-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xfxywl.l2.ttut.cc/2018/04/15/hexo%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2024-06-23</lastmod>
@@ -112,7 +121,7 @@
 
   <url>
     <loc>http://xfxywl.l2.ttut.cc/</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -120,28 +129,42 @@
   
   <url>
     <loc>http://xfxywl.l2.ttut.cc/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xfxywl.l2.ttut.cc/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xfxywl.l2.ttut.cc/tags/hexo/</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xfxywl.l2.ttut.cc/tags/yilia/</loc>
-    <lastmod>2024-06-23</lastmod>
+    <lastmod>2024-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xfxywl.l2.ttut.cc/tags/springboot/</loc>
+    <lastmod>2024-06-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xfxywl.l2.ttut.cc/tags/Maven/</loc>
+    <lastmod>2024-06-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

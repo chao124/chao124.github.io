@@ -78,7 +78,7 @@
             
 		</nav>
 		<nav>
-			<a style="color:#86898D;font-size:12px;">总文章数 5</a>
+			<a style="color:#86898D;font-size:12px;">总文章数 6</a>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -218,6 +218,98 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/04/14/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Maven编译报错" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">Maven编译报错 Malformed \uxxxx encoding</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/" class="archive-article-date">
+  	<time datetime="2023-06-26T06:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h4><p>Maven项目构建时报错如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[ERROR] Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] java.lang.IllegalArgumentException: Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] </span><br><span class="line">[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.</span><br><span class="line">[ERROR] Re-run Maven using the -X switch to enable full debug logging.</span><br></pre></td></tr></table></figure>
+
+<h4 id="问题根因"><a href="#问题根因" class="headerlink" title="问题根因"></a>问题根因</h4><p>maven本地仓库更新策略是会更新三个元文件（包含resolver-status.properties配置文件）以及本地仓库jar包，如果历史文件有错误的话可能会导致加载配置路径错误。</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>All Roads Lead to Rome.</p>
+<p>下列所有操作都是修改的IDEA中Maven配置的本地仓库路径。</p>
+<p>【方案1】<br>将Maven仓库Repository中的所有文件resolver-status.properties删除。该方案较为暴力，需要重新下载maven远程仓的jar包。</p>
+<p>【方案2】<br>修改Maven配置中的本地仓库为新仓库路径。该方法的代价是占用更多的磁盘空间，毕竟会下载一些重复的jar包。</p>
+<p>【方案3】<br>输入bash命令找出有问题的文件并删除掉，命令如下，<br><code>grep -lrnw . -e &#39;\u0000&#39; | xargs rm</code></p>
+<p>记得最后刷新缓存重启IDEA</p>
+<p><img src="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/image-20240626140948369.png" alt="image-20240626140948369"></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">展开全文 >></a>
         </p>
       
 
@@ -668,6 +760,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">springboot</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Maven</a>
               </li>
             
             <div class="clearfix"></div>
