@@ -19,3 +19,4 @@ http://xfxywl.l2.ttut.cc/tags/hexo/
 http://xfxywl.l2.ttut.cc/tags/yilia/
 http://xfxywl.l2.ttut.cc/tags/springboot/
 http://xfxywl.l2.ttut.cc/tags/Maven/
+http://xfxywl.l2.ttut.cc/tags/Synergy/
