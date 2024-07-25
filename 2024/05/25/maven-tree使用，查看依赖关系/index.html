@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xfxywl.l2.ttut.cc">
-  <title>Archives: 2023/6 | 阳光下的少年</title>
+  <title>maven tree使用，查看依赖关系 | 阳光下的少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="阳光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阳光下的少年">
-<meta property="og:url" content="http://xfxywl.l2.ttut.cc/archives/2023/06/index.html">
+  <meta name="description" content="maven 管理项目的依赖，可以使用如下命令查看依赖树结构12345#打印依赖树mvn dependency:tree 		#将依赖树打印到文件中mvn dependency:tree &gt; a.txt   其他命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="maven tree使用，查看依赖关系">
+<meta property="og:url" content="http://xfxywl.l2.ttut.cc/2024/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/index.html">
 <meta property="og:site_name" content="阳光下的少年">
-<meta property="og:description" content="阳光">
+<meta property="og:description" content="maven 管理项目的依赖，可以使用如下命令查看依赖树结构12345#打印依赖树mvn dependency:tree 		#将依赖树打印到文件中mvn dependency:tree &gt; a.txt   其他命令">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-25T15:22:25.000Z">
+<meta property="article:modified_time" content="2024-07-25T15:57:29.518Z">
 <meta property="article:author" content="阳光下的少年">
+<meta property="article:tag" content="Maven">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="阳光下的少年" type="application/atom+xml">
@@ -157,44 +160,92 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-maven-tree使用，查看依赖关系" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2023" class="archive-year">2023</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/" class="archive-article-date">
-  	<time datetime="2023-06-26T06:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-26</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">Maven编译报错 Malformed \uxxxx encoding</a>
+    <h1 class="article-title" itemprop="name">
+      maven tree使用，查看依赖关系
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+		<!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#86898D;font-size:12px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2024/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/" class="archive-article-date">
+  	<time datetime="2024-05-25T15:22:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="maven-管理项目的依赖，可以使用如下命令查看依赖树结构"><a href="#maven-管理项目的依赖，可以使用如下命令查看依赖树结构" class="headerlink" title="maven 管理项目的依赖，可以使用如下命令查看依赖树结构"></a>maven 管理项目的依赖，可以使用如下命令查看依赖树结构</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#打印依赖树</span><br><span class="line">mvn dependency:tree 		</span><br><span class="line"></span><br><span class="line">#将依赖树打印到文件中</span><br><span class="line">mvn dependency:tree &gt; a.txt </span><br></pre></td></tr></table></figure>
+
+<p><strong>其他命令</strong></p>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#打印包含某些包的依赖树</span><br><span class="line">mvn dependency:tree -Dincludes=com.alibaba:fastjson</span><br><span class="line"></span><br><span class="line">#查看依赖树中包含某个artifactId的依赖链（artifactId前面加上冒号）</span><br><span class="line">mvn dependency:tree -Dincludes=:fastjson</span><br><span class="line"></span><br><span class="line">#查看依赖树中包含某个groupId的依赖链（-Dincludes后面跟上groupId）</span><br><span class="line">mvn dependency:tree -Dincludes=com.alibaba</span><br><span class="line"></span><br><span class="line">#使用verbose参数可以看冲突和重复的具体情况：</span><br><span class="line">mvn dependency:tree&gt;tree.txt -Dverbose</span><br><span class="line"></span><br><span class="line">#查看项目依赖</span><br><span class="line">mvn dependency:analyze</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="maven-helper工具"><a href="#maven-helper工具" class="headerlink" title="maven helper工具"></a>maven helper工具</h4><p>结合idea安装对应插件。在plugins——》Marketplace 中搜索安装Maven Helper插件</p>
+<p>安装完成之后点击对应的pom.xml就会看到有多出一个Dependency Analyzer的选项，点击就能看到对应的maven依赖的关系图，可以通过filter搜索自己想要查找的依赖。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/donate/alipayimg.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/donate/wechatpayimg.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
         		</li>
@@ -202,19 +253,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="////api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://xfxywl.l2.ttut.cc/2024/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2024/07/04/synergy%E8%BD%AF%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          synergy软件
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Maven依赖本地jar</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -241,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
