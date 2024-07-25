@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xfxywl.l2.ttut.cc">
-  <title>书单 | 阳光下的少年</title>
+  <title>Maven依赖本地jar | 阳光下的少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="阳光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="书单">
-<meta property="og:url" content="http://xfxywl.l2.ttut.cc/books/index.html">
+  <meta name="description" content="Maven引入本地jar的两种方式1.在Maven中引入本地依赖 你需要在pom.xml文件中添加一个&lt;dependency&gt;元素，并指定本地依赖的groupId、artifactId和version，同时使用systemPath属性来指定本地依赖的文件系统路径。 123456789&lt;dependencies&gt;    &lt;dependency&gt;        &amp;l">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maven依赖本地jar">
+<meta property="og:url" content="http://xfxywl.l2.ttut.cc/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/index.html">
 <meta property="og:site_name" content="阳光下的少年">
-<meta property="og:description" content="阳光">
+<meta property="og:description" content="Maven引入本地jar的两种方式1.在Maven中引入本地依赖 你需要在pom.xml文件中添加一个&lt;dependency&gt;元素，并指定本地依赖的groupId、artifactId和version，同时使用systemPath属性来指定本地依赖的文件系统路径。 123456789&lt;dependencies&gt;    &lt;dependency&gt;        &amp;l">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-12T09:11:02.350Z">
-<meta property="article:modified_time" content="2021-04-12T09:11:02.350Z">
+<meta property="article:published_time" content="2023-07-25T15:11:19.000Z">
+<meta property="article:modified_time" content="2024-07-25T15:18:45.893Z">
 <meta property="article:author" content="阳光下的少年">
+<meta property="article:tag" content="Maven">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="阳光下的少年" type="application/atom+xml">
@@ -158,31 +159,49 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="books-" class="article article-type-books " itemscope itemprop="blogPost">
+            
+<article id="post-Maven依赖本地jar" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      书单
+      Maven依赖本地jar
     </h1>
   
 
 		<!--显示阅读次数-->
 
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#86898D;font-size:12px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
 <!--显示阅读次数完毕-->
         
         
-<a href="/books/index.html" class="archive-article-date">
-  	<time datetime="2021-04-12T09:11:02.350Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-12</time>
+<a href="/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/" class="archive-article-date">
+  	<time datetime="2023-07-25T15:11:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="Maven引入本地jar的两种方式"><a href="#Maven引入本地jar的两种方式" class="headerlink" title="Maven引入本地jar的两种方式"></a>Maven引入本地jar的两种方式</h4><p><strong>1.在Maven中引入本地依赖</strong></p>
+<p>你需要在<code>pom.xml</code>文件中添加一个<code>&lt;dependency&gt;</code>元素，并指定本地依赖的<code>groupId</code>、<code>artifactId</code>和<code>version</code>，同时使用<code>systemPath</code>属性来指定本地依赖的文件系统路径。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>your.local.dependency.groupId<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>your-local-dependency-artifactId<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">scope</span>&gt;</span>system<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">systemPath</span>&gt;</span>实际路径/xxx.jar<span class="tag">&lt;/<span class="name">systemPath</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>2.将jar上传至本地仓库</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mvn install:install-file -Dfile=/path/to/your/local/dependency/jar \</span><br><span class="line">                         -DgroupId=your.local.dependency.groupId \</span><br><span class="line">                         -DartifactId=your-local-dependency-artifactId \</span><br><span class="line">                         -Dversion=1.0.0 \</span><br><span class="line">                         -Dpackaging=jar</span><br></pre></td></tr></table></figure>
+
+
       
 
       
@@ -221,6 +240,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -271,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="////api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://xfxywl.l2.ttut.cc/books/" alt="微信分享二维码">
+      <img src="////api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://xfxywl.l2.ttut.cc/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,6 +313,25 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2024/07/04/synergy%E8%BD%AF%E4%BB%B6/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          synergy软件
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Maven编译报错 Malformed \uxxxx encoding</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -301,6 +350,16 @@
 </aside>
 
 
+
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -327,7 +386,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
