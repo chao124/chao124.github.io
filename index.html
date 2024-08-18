@@ -78,7 +78,7 @@
             
 		</nav>
 		<nav>
-			<a style="color:#86898D;font-size:12px;">总文章数 9</a>
+			<a style="color:#86898D;font-size:12px;">总文章数 14</a>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -247,6 +247,91 @@
 
 
   
+    <article id="post-SpringBoot加载配置文件优先级" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/">SpringBoot加载配置文件优先级</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/" class="archive-article-date">
+  	<time datetime="2024-08-18T02:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>当项目启动时，Spring Boot会按照一定的顺序去加载这些配置文件。以下是这些配置文件的默认加载顺序：</p>
+<h4 id="读取顺序"><a href="#读取顺序" class="headerlink" title="读取顺序"></a>读取顺序</h4><p>优先级由高到底，高优先级的配置会覆盖低优先级的配置。</p>
+<ul>
+<li>如果低优先级存在高优先级没有的属性，则会互补配置。</li>
+<li>如果同一个配置属性，在多个配置文件都配置了，默认使用第1个读取到的即优先级高的配置。</li>
+<li>在同一位置下，<code>.properties</code> 文件优先级高于 <code>.yml</code> 或 <code>.yaml</code> 文件，且带有具体环境标识（如开发、生产环境）的配置文件优先于通用配置文件。</li></ul>
+        
+          <a class="article-more-a" href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-synergy软件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -327,14 +412,14 @@
 
 
   
-    <article id="post-Maven依赖本地jar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-SpringBoot项目创建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/">Maven依赖本地jar</a>
+      <a class="article-title" href="/2023/06/18/SpringBoot%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/">SpringBoot项目创建</a>
     </h1>
   
 
@@ -343,8 +428,414 @@
 <!--显示阅读次数完毕-->
         
         
-<a href="/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/" class="archive-article-date">
-  	<time datetime="2023-07-25T15:11:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-25</time>
+<a href="/2023/06/18/SpringBoot%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2023-06-18T03:48:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="用阿里云start-aliyun-com替换start-spring-io"><a href="#用阿里云start-aliyun-com替换start-spring-io" class="headerlink" title="用阿里云start.aliyun.com替换start.spring.io"></a>用阿里云start.aliyun.com替换start.spring.io</h5><p>对于很多项目来说，还是在用java8，但是访问<a target="_blank" rel="noopener" href="https://start.spring.io/">https://start.spring.io/</a> 创建脚手架项目的时候，最低是java 17了。</p>
+<p>阿里云也同样有相同功能的网站供我们创建springboot脚手架项目</p>
+<p>地址：<a target="_blank" rel="noopener" href="https://start.aliyun.com/">https://start.aliyun.com/</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/06/18/SpringBoot%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BA/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-SpringBoot依赖jar包外置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/06/18/SpringBoot%E4%BE%9D%E8%B5%96jar%E5%8C%85%E5%A4%96%E7%BD%AE/">SpringBoot依赖jar包外置</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2023/06/18/SpringBoot%E4%BE%9D%E8%B5%96jar%E5%8C%85%E5%A4%96%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2023-06-18T02:55:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>SpringBoot编译出来的jar所有的依赖都在jar包内部，导致jar包比较大，网络慢的话每次部署上传都要很长时间。</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><h6 id="修改pom-xml文件"><a href="#修改pom-xml文件" class="headerlink" title="修改pom.xml文件"></a>修改<code>pom.xml</code>文件</h6>
+        
+          <a class="article-more-a" href="/2023/06/18/SpringBoot%E4%BE%9D%E8%B5%96jar%E5%8C%85%E5%A4%96%E7%BD%AE/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2023/06/18/SpringBoot%E4%BE%9D%E8%B5%96jar%E5%8C%85%E5%A4%96%E7%BD%AE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-SpringBoot启动命令参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/09/23/SpringBoot%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/">SpringBoot启动命令参数</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2022/09/23/SpringBoot%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2022-09-23T03:09:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-09-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="SpringBoot启动参数"><a href="#SpringBoot启动参数" class="headerlink" title="SpringBoot启动参数"></a>SpringBoot启动参数</h5><p>基于SpringBoot开发的项目，直接打包成jar文件，基于内嵌的tomcat启动命令。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java [ options ] -jar *.jar [ arguments ]</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2022/09/23/SpringBoot%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/09/23/SpringBoot%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-System-getProperty获取系统参数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/11/System-getProperty%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E5%8F%82%E6%95%B0/">System.getProperty获取系统参数</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2022/05/11/System-getProperty%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E5%8F%82%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2022-05-11T05:57:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-05-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>对于Java平台来说，它使用一个Properties对象来维护自己的配置信息。System类维护了一个Properties对象，这个对象描述了当前工作环境的配置信息系统配置信息包括了当前的用户、当前的java版本、文件分隔符等等。</p>
+        
+          <a class="article-more-a" href="/2022/05/11/System-getProperty%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E5%8F%82%E6%95%B0/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">springboot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/05/11/System-getProperty%E8%8E%B7%E5%8F%96%E7%B3%BB%E7%BB%9F%E5%8F%82%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Maven中的dependencyManagement作用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/18/Maven%E4%B8%AD%E7%9A%84dependencyManagement%E4%BD%9C%E7%94%A8/">Maven中的dependencyManagement作用</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2021/08/18/Maven%E4%B8%AD%E7%9A%84dependencyManagement%E4%BD%9C%E7%94%A8/" class="archive-article-date">
+  	<time datetime="2021-08-18T04:22:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-作用"><a href="#1-作用" class="headerlink" title="1.作用:"></a>1.作用:</h4><p>在Maven中dependencyManagement的作用其实相当于一个对所依赖jar包进行版本管理的管理器。</p>
+        
+          <a class="article-more-a" href="/2021/08/18/Maven%E4%B8%AD%E7%9A%84dependencyManagement%E4%BD%9C%E7%94%A8/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/18/Maven%E4%B8%AD%E7%9A%84dependencyManagement%E4%BD%9C%E7%94%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Maven依赖本地jar" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/">Maven依赖本地jar</a>
+    </h1>
+  
+
+		<!--显示阅读次数-->
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2021/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/" class="archive-article-date">
+  	<time datetime="2021-07-25T15:11:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-25</time>
 </a>
         
       </header>
@@ -383,7 +874,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2023/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/07/25/Maven%E4%BE%9D%E8%B5%96%E6%9C%AC%E5%9C%B0jar/">展开全文 >></a>
         </p>
       
 
@@ -420,7 +911,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">Maven编译报错 Malformed \uxxxx encoding</a>
+      <a class="article-title" href="/2021/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">Maven编译报错 Malformed \uxxxx encoding</a>
     </h1>
   
 
@@ -429,8 +920,8 @@
 <!--显示阅读次数完毕-->
         
         
-<a href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/" class="archive-article-date">
-  	<time datetime="2023-06-26T06:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-06-26</time>
+<a href="/2021/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/" class="archive-article-date">
+  	<time datetime="2021-06-26T06:01:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-26</time>
 </a>
         
       </header>
@@ -440,7 +931,7 @@
         <h4 id="问题背景"><a href="#问题背景" class="headerlink" title="问题背景"></a>问题背景</h4><p>Maven项目构建时报错如下</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[ERROR] Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] java.lang.IllegalArgumentException: Malformed \uxxxx encoding.</span><br><span class="line">[ERROR] </span><br><span class="line">[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.</span><br><span class="line">[ERROR] Re-run Maven using the -X switch to enable full debug logging.</span><br></pre></td></tr></table></figure>
         
-          <a class="article-more-a" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/#more">more >></a>
+          <a class="article-more-a" href="/2021/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/#more">more >></a>
         
       
 
@@ -468,7 +959,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2023/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/06/26/Maven%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99/">展开全文 >></a>
         </p>
       
 
@@ -498,383 +989,10 @@
 
 
   
-    <article id="post-maven-tree使用，查看依赖关系" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/">maven tree使用，查看依赖关系</a>
-    </h1>
-  
-
-		<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        
-<a href="/2023/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/" class="archive-article-date">
-  	<time datetime="2023-05-25T15:22:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-05-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="maven-管理项目的依赖，可以使用如下命令查看依赖树结构"><a href="#maven-管理项目的依赖，可以使用如下命令查看依赖树结构" class="headerlink" title="maven 管理项目的依赖，可以使用如下命令查看依赖树结构"></a>maven 管理项目的依赖，可以使用如下命令查看依赖树结构</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#打印依赖树</span><br><span class="line">mvn dependency:tree 		</span><br><span class="line"></span><br><span class="line">#将依赖树打印到文件中</span><br><span class="line">mvn dependency:tree &gt; a.txt </span><br></pre></td></tr></table></figure>
-
-<p><strong>其他命令</strong></p>
-        
-          <a class="article-more-a" href="/2023/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Maven</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/05/25/maven-tree%E4%BD%BF%E7%94%A8%EF%BC%8C%E6%9F%A5%E7%9C%8B%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-第一个博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/25/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">git</a>
-    </h1>
-  
-
-		<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        
-<a href="/2018/06/25/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2018-06-25T15:20:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>git相关</p>
-        
-          <a class="article-more-a" href="/2018/06/25/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/25/%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo-更换电脑，继续写博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/15/hexo-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%EF%BC%8C%E7%BB%A7%E7%BB%AD%E5%86%99%E5%8D%9A%E5%AE%A2/">hexo:更换电脑，继续写博客</a>
-    </h1>
-  
-
-		<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        
-<a href="/2018/04/15/hexo-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%EF%BC%8C%E7%BB%A7%E7%BB%AD%E5%86%99%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2018-04-15T12:32:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-将你原来电脑上已经配置好并生成的hexo目录拷到你的新电脑上，注意无需拷全部，只拷如下几个目录："><a href="#1-将你原来电脑上已经配置好并生成的hexo目录拷到你的新电脑上，注意无需拷全部，只拷如下几个目录：" class="headerlink" title="1.将你原来电脑上已经配置好并生成的hexo目录拷到你的新电脑上，注意无需拷全部，只拷如下几个目录："></a>1.将你原来电脑上已经配置好并生成的hexo目录拷到你的新电脑上，注意无需拷全部，只拷如下几个目录：</h2>
-        
-          <a class="article-more-a" href="/2018/04/15/hexo-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%EF%BC%8C%E7%BB%A7%E7%BB%AD%E5%86%99%E5%8D%9A%E5%AE%A2/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/15/hexo-%E6%9B%B4%E6%8D%A2%E7%94%B5%E8%84%91%EF%BC%8C%E7%BB%A7%E7%BB%AD%E5%86%99%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hexo相关问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/15/hexo%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">hexo相关问题</a>
-    </h1>
-  
-
-		<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        
-<a href="/2018/04/15/hexo%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="archive-article-date">
-  	<time datetime="2018-04-15T02:55:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hexo相关的一些问题和yilia主题配置</p>
-        
-          <a class="article-more-a" href="/2018/04/15/hexo%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">yilia</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/15/hexo%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-		<!--显示阅读次数-->
-
-<!--显示阅读次数完毕-->
-        
-        
-<a href="/2018/03/22/hello-world/" class="archive-article-date">
-  	<time datetime="2018-03-22T15:20:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-        
-          <a class="article-more-a" href="/2018/03/22/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/22/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -998,6 +1116,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Synergy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
             
             <div class="clearfix"></div>
