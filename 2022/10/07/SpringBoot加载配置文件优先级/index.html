@@ -6,16 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xfxywl.l2.ttut.cc">
-  <title>Archives: 2024/8 | 阳光下的少年</title>
+  <title>SpringBoot加载配置文件优先级 | 阳光下的少年</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="阳光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="阳光下的少年">
-<meta property="og:url" content="http://xfxywl.l2.ttut.cc/archives/2024/08/index.html">
+  <meta name="description" content="当项目启动时，Spring Boot会按照一定的顺序去加载这些配置文件。以下是这些配置文件的默认加载顺序： 读取顺序优先级由高到底，高优先级的配置会覆盖低优先级的配置。  如果低优先级存在高优先级没有的属性，则会互补配置。 如果同一个配置属性，在多个配置文件都配置了，默认使用第1个读取到的即优先级高的配置。 在同一位置下，.properties 文件优先级高于 .yml 或 .yaml 文件，且带">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot加载配置文件优先级">
+<meta property="og:url" content="http://xfxywl.l2.ttut.cc/2022/10/07/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/index.html">
 <meta property="og:site_name" content="阳光下的少年">
-<meta property="og:description" content="阳光">
+<meta property="og:description" content="当项目启动时，Spring Boot会按照一定的顺序去加载这些配置文件。以下是这些配置文件的默认加载顺序： 读取顺序优先级由高到底，高优先级的配置会覆盖低优先级的配置。  如果低优先级存在高优先级没有的属性，则会互补配置。 如果同一个配置属性，在多个配置文件都配置了，默认使用第1个读取到的即优先级高的配置。 在同一位置下，.properties 文件优先级高于 .yml 或 .yaml 文件，且带">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-10-07T12:56:22.000Z">
+<meta property="article:modified_time" content="2024-08-18T06:50:24.343Z">
 <meta property="article:author" content="阳光下的少年">
+<meta property="article:tag" content="springboot">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="阳光下的少年" type="application/atom+xml">
@@ -157,36 +160,95 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-SpringBoot加载配置文件优先级" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2024" class="archive-year">2024</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/" class="archive-article-date">
-  	<time datetime="2024-08-18T02:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-08-18</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2024/08/18/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/">SpringBoot加载配置文件优先级</a>
+    <h1 class="article-title" itemprop="name">
+      SpringBoot加载配置文件优先级
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+		<!--显示阅读次数-->
+
+  <br/>
+  <a class="cloud-tie-join-count" href="javascript:void(0);" style="color:gray;font-size:14px;">
+  <span class="icon-sort"></span>
+  <span id="busuanzi_container_page_pv" style="color:#86898D;font-size:12px;">
+            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
+  </span>
+  </a>
+
+<!--显示阅读次数完毕-->
+        
+        
+<a href="/2022/10/07/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/" class="archive-article-date">
+  	<time datetime="2022-10-07T12:56:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-10-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>当项目启动时，Spring Boot会按照一定的顺序去加载这些配置文件。以下是这些配置文件的默认加载顺序：</p>
+<h4 id="读取顺序"><a href="#读取顺序" class="headerlink" title="读取顺序"></a>读取顺序</h4><p>优先级由高到底，高优先级的配置会覆盖低优先级的配置。</p>
+<ul>
+<li>如果低优先级存在高优先级没有的属性，则会互补配置。</li>
+<li>如果同一个配置属性，在多个配置文件都配置了，默认使用第1个读取到的即优先级高的配置。</li>
+<li>在同一位置下，<code>.properties</code> 文件优先级高于 <code>.yml</code> 或 <code>.yaml</code> 文件，且带有具体环境标识（如开发、生产环境）的配置文件优先于通用配置文件。<span id="more"></span></li>
+</ul>
+<h5 id="1-命令行参数："><a href="#1-命令行参数：" class="headerlink" title="1.命令行参数："></a>1.命令行参数：</h5><p>通过 <code>--spring.config.location</code> 或 <code>--spring.config.additional-location</code> 指定的配置文件路径拥有最高的优先级。</p>
+<p><strong>另外：</strong><br>spring.config.location：这个会使项目原本的配置文件失效。<br>spring.config.additional-location：不会使项目内置的配置文件失效，两者会互补，additional-location配置的文件优先级更高。</p>
+<h5 id="2-Java系统属性："><a href="#2-Java系统属性：" class="headerlink" title="2.Java系统属性："></a>2.Java系统属性：</h5><p>通过<code>System.setProperty()</code>设置的属性。</p>
+<h5 id="3-操作系统环境变量："><a href="#3-操作系统环境变量：" class="headerlink" title="3.操作系统环境变量："></a>3.操作系统环境变量：</h5><p>所有以 SPRING_APPLICATION_JSON 形式存在的环境变量，以及以 spring.* 开头的环境变量会被转换为配置属性。</p>
+<h5 id="4-配置文件外部："><a href="#4-配置文件外部：" class="headerlink" title="4.配置文件外部："></a>4.配置文件外部：</h5><p><code>config/&#123;name&#125;-&#123;profile&#125;.properties 或 config/&#123;name&#125;-&#123;profile&#125;.yml</code><br><code>&#123;name&#125;-&#123;profile&#125;.properties 或 &#123;name&#125;-&#123;profile&#125;.yml</code><br><code>config/&#123;name&#125;.properties 或 config/&#123;name&#125;.yml</code><br><code>&#123;name&#125;.properties 或 &#123;name&#125;.yml</code></p>
+<p>其中 {name} 默认为 application，{profile} 是激活的Spring Boot配置环境。<br>可通过命令行激活</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar myapp.jar --spring.profiles.active=prod</span><br></pre></td></tr></table></figure>
+
+<h5 id="5-配置文件内部（对于已打包的应用）："><a href="#5-配置文件内部（对于已打包的应用）：" class="headerlink" title="5.配置文件内部（对于已打包的应用）："></a>5.配置文件内部（对于已打包的应用）：</h5><p><code>BOOT-INF/classes/config/&#123;name&#125;-&#123;profile&#125;.properties 或 BOOT-INF/classes/config/&#123;name&#125;-&#123;profile&#125;.yml</code><br><code>BOOT-INF/classes/&#123;name&#125;-&#123;profile&#125;.properties 或 BOOT-INF/classes/&#123;name&#125;-&#123;profile&#125;.yml</code><br><code>BOOT-INF/classes/config/&#123;name&#125;.properties 或 BOOT-INF/classes/config/&#123;name&#125;.yml</code><br><code>BOOT-INF/classes/&#123;name&#125;.properties 或 BOOT-INF/classes/&#123;name&#125;.yml</code></p>
+<h5 id="6-Configuration-类上的-PropertySource-注解："><a href="#6-Configuration-类上的-PropertySource-注解：" class="headerlink" title="6.@Configuration 类上的 @PropertySource 注解："></a>6.<code>@Configuration</code> 类上的 <code>@PropertySource</code> 注解：</h5><p>这种方式加载的配置具有较低的优先级，但是可以直接指向具体的配置文件。</p>
+<h5 id="7-默认配置"><a href="#7-默认配置" class="headerlink" title="7.默认配置"></a>7.默认配置</h5><p>Spring Boot包含一些内建的默认配置，其优先级最低。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/donate/alipayimg.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/donate/wechatpayimg.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,19 +260,115 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="////api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://xfxywl.l2.ttut.cc/2022/10/07/SpringBoot%E5%8A%A0%E8%BD%BD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BC%98%E5%85%88%E7%BA%A7/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2023/06/18/SpringBoot%E4%BE%9D%E8%B5%96jar%E5%8C%85%E5%A4%96%E7%BD%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          SpringBoot依赖jar包外置
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2022/09/23/SpringBoot%E5%90%AF%E5%8A%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SpringBoot启动命令参数</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -237,8 +395,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
